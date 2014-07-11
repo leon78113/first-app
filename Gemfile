@@ -8,6 +8,9 @@ gem 'rails', '4.1.1'
 gem 'bootstrap-sass','~> 3.0.3.0'
 # myself's gem
 
+gem 'simple_form', '~> 3.0.0.rc'
+# transform ruby to html in texts of table
+
 gem 'better_errors' #helper of error message
 gem 'meta_request' #check log in chrome
 #====
