@@ -8,6 +8,7 @@ class GroupsController < ApplicationController
 	end
 
 	def new
+		@groups = Group.new
 	end
 
 	def edit
