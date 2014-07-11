@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
+
+#bootstap framework layout
+gem 'bootstrap-sass','~> 3.0.3.0'
 # myself's gem
 
 gem 'better_errors' #helper of error message
