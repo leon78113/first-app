@@ -9,11 +9,10 @@ class GroupsController < ApplicationController
 	end
 
 	def new
-		@groups = Group.new
+		@group = Group.new
 	end
 
 	def edit
-		@group = Group.find(params[:id])
 	end
 
 	def create
@@ -24,19 +23,9 @@ class GroupsController < ApplicationController
 	end
 
 	def update
-		@group = Group.find(params[:id])
-
-		if @group.update(group_params)
-			redirect_to group_path(@group)
-		else
-			render :edit
-		end
 	end
 
 	def destroy
-		@group = Group.find(params[:id])
-		@group.destroy
-		redirect_to groups_path
 	end
 
 	private
